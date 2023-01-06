@@ -216,6 +216,8 @@ resources:
                 Value: "/usr/share/java/ksqldb-rest-app/*"
               - Name: KSQL_HEAP_OPTS
                 Value: ${param:heap}
+              - Name: KSQL_LOG4J_ROOT_LOGLEVEL
+                Value: "ERROR"
             LogConfiguration:
               LogDriver: awslogs
               Options:
